@@ -5,17 +5,17 @@
 ### Every Smart India Hackathon problem statement from 2024, 2025 and 2026 — one file each, plain Markdown, no login wall.
 
 The official SIH portal publishes its problem statements, then replaces them next season.
-This repository keeps them. **607 problem statements** from **82 organisations**,
-**214,636 words** of ministry-authored engineering briefs, plus the **455 grand finale
-winning teams** for 2024 and 2025 — frozen as `SIHxxxx.md` and greppable from your terminal.
+This repository keeps them. **614 problem statements** from **86 organisations**,
+**189,240 words** of ministry-authored engineering briefs, frozen as `SIHxxxx.md`
+and greppable from your terminal.
 
 [![Browse Online](https://img.shields.io/badge/Browse%20Online-sih.saireddy.dev-f97316?style=for-the-badge)](https://sih.saireddy.dev/)
-[![Problem Statements](https://img.shields.io/badge/problem%20statements-607-0f766e?style=for-the-badge)](#-whats-inside)
+[![Problem Statements](https://img.shields.io/badge/problem%20statements-614-0f766e?style=for-the-badge)](#-whats-inside)
 [![Years](https://img.shields.io/badge/years-2024%20·%202025%20·%202026-1d4ed8?style=for-the-badge)](#-whats-inside)
 [![Format](https://img.shields.io/badge/format-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](#-anatomy-of-a-problem-statement)
 
-[![Software](https://img.shields.io/badge/Software-440-2563eb?style=flat-square)](#-the-softwarehardware-split)
-[![Hardware](https://img.shields.io/badge/Hardware-167-7c3aed?style=flat-square)](#-the-softwarehardware-split)
+[![Software](https://img.shields.io/badge/Software-444-2563eb?style=flat-square)](#-the-softwarehardware-split)
+[![Hardware](https://img.shields.io/badge/Hardware-170-7c3aed?style=flat-square)](#-the-softwarehardware-split)
 [![Themes](https://img.shields.io/badge/themes-18-be185d?style=flat-square)](#-themes-across-three-years)
 [![Finale Winners](https://img.shields.io/badge/finale%20winners-455-d97706?style=flat-square)](#-who-won)
 [![Text](https://img.shields.io/badge/text-original%20authors-64748b?style=flat-square)](ATTRIBUTION.md)
@@ -82,7 +82,7 @@ No build step. No dependencies. No database. `git clone` and `grep`.
 sih-ps-archive/
 ├── 2024/              246 files — SIH1524 … SIH1782
 ├── 2025/              135 files — SIH25001 … SIH25142
-├── 2026/              226 files — SIH26001 … SIH26226
+├── 2026/              233 files — SIH26001 … SIH26233
 ├── ATTRIBUTION.md     sources, provenance, what was normalised
 ├── CONTRIBUTING.md    how to add a missing statement
 └── README.md
@@ -90,10 +90,10 @@ sih-ps-archive/
 
 | Year | Statements | ID range | Software | Hardware | Themes | Completeness |
 | :--- | ---: | :--- | ---: | ---: | ---: | :--- |
-| **2026** | **226** | `SIH26001`–`SIH26226` | 172 | 54 | 18 | ✅ Complete, no gaps |
+| **2026** | **233** | `SIH26001`–`SIH26233` | 176 | 57 | 18 | ✅ Complete, no gaps |
 | **2025** | **135** | `SIH25001`–`SIH25142` | 90 | 45 | 17 | ⚠️ Partial — 7 IDs missing |
 | **2024** | **246** | `SIH1524`–`SIH1782` | 178 | 68 | 18 | ⚠️ 13 IDs missing |
-| **Total** | **607** | — | **440** | **167** | **18** | ~96% of known IDs |
+| **Total** | **614** | — | **444** | **170** | **18** | ~96% of known IDs |
 
 The 2024 and 2025 files also carry the grand finale result for the statement — see
 [Who won](#-who-won). 2026 has not been judged yet.
@@ -104,7 +104,7 @@ The longest is [`2024/SIH1704.md`](2024/SIH1704.md) at 2,281 words.
 ## 🔬 Anatomy of a problem statement
 
 One statement, one file, named for its official ID. The schema is identical across
-all 607 files: an `H1` title carrying the ID, a four-field metadata block, then
+all 614 files: an `H1` title carrying the ID, a four-field metadata block, then
 free-form sections.
 
 ```markdown
@@ -127,11 +127,11 @@ A scalable AI-based software platform with:
 ...
 ```
 
-**Guaranteed on all 607 files:**
+**Guaranteed on all 614 files:**
 
 | Field | Values |
 | :--- | :--- |
-| `**Organization:**` | 82 distinct — the ministry, state or company sponsoring it |
+| `**Organization:**` | 86 distinct — the ministry, state or company sponsoring it |
 | `**Department:**` | The specific wing or collaborating body |
 | `**Category:**` | `Software` or `Hardware` — exactly two values, no exceptions |
 | `**Theme:**` | One of 18 official themes |
@@ -244,14 +244,14 @@ the design is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 | Smart Automation | 57 | 14 | 31 | **102** | 🔻 down from a 2024 peak |
 | Miscellaneous | 35 | 18 | 38 | **91** | ▬ always the catch-all |
 | Smart Education | 30 | 20 | 13 | **63** | 🔻 steady decline |
-| Blockchain & Cybersecurity | 20 | 3 | 22 | **45** | 🔀 collapsed in 2025, roared back |
-| MedTech / BioTech / HealthTech | 17 | 11 | 14 | **42** | ▬ stable |
+| Blockchain & Cybersecurity | 20 | 3 | 23 | **46** | 🔀 collapsed in 2025, roared back |
+| MedTech / BioTech / HealthTech | 17 | 11 | 16 | **44** | ▬ stable |
 | **Disaster Management** | 5 | 8 | 29 | **42** | 🔺 **5.8× in two years** |
-| Agriculture, FoodTech & Rural Dev. | 11 | 17 | 12 | **40** | ▬ stable |
-| Clean & Green Technology | 21 | 8 | 2 | **31** | 🔻 near-total collapse |
+| Agriculture, FoodTech & Rural Dev. | 11 | 17 | 14 | **42** | ▬ stable |
+| Clean & Green Technology | 21 | 8 | 3 | **32** | 🔻 near-total collapse |
 | Transportation & Logistics | 12 | 8 | 8 | **28** | ▬ stable |
 | Robotics and Drones | 9 | 3 | 10 | **22** | 🔀 dip, then recovery |
-| Space Technology | 6 | 2 | 11 | **19** | 🔺 rising |
+| Space Technology | 6 | 2 | 12 | **20** | 🔺 rising |
 | Renewable / Sustainable Energy | 7 | 6 | 4 | **17** | 🔻 fading |
 | Travel & Tourism | 4 | 6 | 6 | **16** | ▬ stable |
 | Heritage & Culture | 2 | 4 | 7 | **13** | 🔺 rising |
@@ -262,28 +262,28 @@ the design is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 **What the numbers say.** Disaster Management is the loudest signal in the archive —
 5 → 8 → 29 statements, now the third-largest theme in 2026 and openly climate-framed
-in the text. Space Technology nearly doubled. Meanwhile *Clean & Green Technology*
-fell from 21 statements to 2, and *Smart Automation* halved from its 2024 high, which
+in the text. Space Technology nearly doubled from 6 to 12. Meanwhile *Clean & Green Technology*
+fell from 21 statements to 3, and *Smart Automation* halved from its 2024 high, which
 looks less like a retreat from the subject and more like automation getting absorbed
 into every other theme's problem text.
 
 ## ⚖️ The software/hardware split
 
-`Category` has exactly two values across all 607 files. The ratio barely moves:
+`Category` has exactly two values across all 614 files. The ratio barely moves:
 
 | Year | Software | Hardware | Software share |
 | :--- | ---: | ---: | ---: |
 | 2024 | 178 | 68 | `72%` ████████████████░░░░░░░ |
 | 2025 | 90 | 45 | `67%` ███████████████░░░░░░░░ |
-| 2026 | 172 | 54 | `76%` █████████████████░░░░░░ |
-| **All** | **440** | **167** | **`72%`** |
+| 2026 | 176 | 57 | `76%` █████████████████░░░░░░ |
+| **All** | **444** | **170** | **`72%`** |
 
 Roughly seven in ten SIH problems are software problems, every single year. If you're
-a hardware team, your competition is thinner — 167 statements across three editions.
+a hardware team, your competition is thinner — 170 statements across three editions.
 
 ## 🏛️ Who's asking
 
-82 distinct sponsoring organisations. Top of the list:
+86 distinct sponsoring organisations. Top of the list:
 
 | Organisation | Statements |
 | :--- | ---: |
@@ -363,7 +363,7 @@ This archive is honest about what it doesn't have. **20 known IDs are absent.**
 25078 25086 25087 25088 25089 25105 25106
 ```
 
-**2026** — 226 of 226. Complete, contiguous, no gaps. ✅
+**2026** — 233 of 233. Complete, contiguous, no gaps. ✅
 
 Some gaps are genuinely absent upstream — SIH withdraws statements after publishing.
 Others are collection misses. If you have a published statement whose ID appears
@@ -444,7 +444,7 @@ Corrections to the provenance record are as welcome as corrections to the data.
 
 <div align="center">
 
-**607 problem statements. 455 winning teams. 3 editions. 0 build steps.**
+**614 problem statements. 86 organisations. 3 editions. 0 dependencies.**
 
 <sub>Not affiliated with Smart India Hackathon, AICTE, or the Government of India.<br>
 An independent archive of publicly published material.</sub>
